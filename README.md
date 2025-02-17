@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Brayhan Ninahuaman (Braynin) - Front-end Web Developer
 
-## Getting Started
+## About Me
 
-First, run the development server:
+I'm Braynin, a Front-end Web Developer with experience in creating efficient and functional digital solutions. I am constantly learning and evolving in the development world, combining frontend and backend skills to build dynamic and interactive applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Contact
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I am interested in being part of challenging projects that allow me to continue growing professionally. If you want to collaborate or have a proposal, feel free to contact me through:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Email:** [brayhannb@gmail.com](mailto:brayhannb@gmail.com)
+- **LinkedIn:** [linkedin.com/in/brayhan-ninahuaman-braynin/](https://linkedin.com/in/brayhan-ninahuaman-braynin/)
+- **GitHub:** [github.com/Braynin](https://github.com/Braynin)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies
 
-## Learn More
+### Frontend
 
-To learn more about Next.js, take a look at the following resources:
+- React.js with Tailwind CSS
+- Next.js
+- Astro
+- JavaScript (ES6+)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend (learning)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Node.js with Express
+- MongoDB
 
-## Deploy on Vercel
+### Other Tools
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Git and GitHub
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Skills
+
+- Web application development
+- Performance optimization and user experience enhancement
+- Responsive and interactive design implementation
+- Problem-solving and logical thinking
+
+## Interests
+
+Beyond coding, I enjoy exploring new technologies, continuously improving my skills, and staying updated on web development trends. I also have a passion for video games and technology in general.
+
+---
+
+This portfolio reflects my work and growth as a developer. Thank you for visiting!
