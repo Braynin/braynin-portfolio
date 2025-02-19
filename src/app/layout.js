@@ -1,5 +1,8 @@
 import "./globals.css";
 
+import Header from "./components/header.js";
+import Footer from "./components/footer.js";
+
 export const metadata = {
   title: "Braynin Portfolio",
   description:
@@ -8,8 +11,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="es">
+      <body>
+        {<Header />}
+        {children}
+        {<Footer />}
+      </body>
     </html>
   );
 }
