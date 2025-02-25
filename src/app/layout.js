@@ -1,7 +1,7 @@
 import "./globals.css";
 
-import Header from "./components/header.js";
-import Footer from "./components/footer.js";
+import Header from "../components/ui/header.js";
+import Footer from "../components/ui/footer.js";
 
 export const metadata = {
   title: "Braynin Portfolio",
