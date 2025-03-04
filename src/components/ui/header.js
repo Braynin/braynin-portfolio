@@ -1,4 +1,6 @@
 "use client";
+import { Silkscreen } from "next/font/google";
+const silkscreen = Silkscreen({ weight: "400", subsets: ["latin"] });
 
 import { useState, useEffect, useRef } from "react";
 import navOptions from "../data/navOptions.js";
@@ -37,11 +39,13 @@ export default function Header() {
   }, []);
   return (
     <header
-      className={`fixed top-0 left-0 h-16 w-full flex justify-center transition-transform duration-300 ${
+      className={`fixed z-50 h-16 w-full flex justify-center transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } `}
     >
-      <nav className="w-8/12 h-full  bg-acero rounded-b-full px-10">
+      <nav
+        className={`${silkscreen.className} w-8/12 h-full  bg-acero rounded-b-full px-10`}
+      >
         <ul className="h-full flex justify-between items-center">
           {navOptions.map((option) => (
             <li

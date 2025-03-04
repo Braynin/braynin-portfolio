@@ -12,7 +12,7 @@ export default {
     extend: {
       keyframes: {
         typeWriter: {
-          to: { width: "27ch" },
+          to: { width: "16ch" },
         },
         blink: {
           "0%": {
