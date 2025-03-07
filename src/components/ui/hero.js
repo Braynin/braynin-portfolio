@@ -9,21 +9,25 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className=" w-full min-h-screen flex bg-[url('/background-hero.webp')] bg-cover">
-      <div className=" w-1/2 m-auto   flex items-center justify-center">
-        <div className="w-4/5 bg-azul bg-opacity-20 rounded-full py-5 flex flex-col items-center justify-center">
-          <h1 className="text-4xl border-r-4 w-0 whitespace-nowrap overflow-hidden animate-typeWriterBlink">
+    <section className="relative w-full min-h-screen flex">
+      <div className="absolute inset-0 bg-[url('/background-hero.webp')] bg-cover"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-azulOscuro"></div>
+      <div className="relative z-10 w-1/2 m-auto   flex items-center justify-center">
+        <div className="w-4/5 bg-azul bg-opacity-20 rounded-full celular:rounded-none py-5 flex flex-col items-center justify-center">
+          <h1 className="text-4xl celular:text-2xl font-bold border-r-4 w-0 whitespace-nowrap overflow-hidden animate-typeWriterBlink celular:animate-typeWriterBlinkCelular">
             Hola, soy{" "}
-            <span className={`${silkscreen.className} text-celeste font-bold`}>
+            <span
+              className={`${silkscreen.className} celular:block text-celeste font-bold`}
+            >
               Brayhan
             </span>
           </h1>
-          <p className="my-4 font-semibold w-4/5  text-2xl ">
+          <p className="my-4 font-semibold w-4/5  text-2xl  celular:text-xl">
             Concentrado en aprender, practicar y buscar nuevas oportunidades
             laborales.
           </p>
-          <div>
-            <ul className="flex gap-4">
+          <div className="w-4/5">
+            <ul className="flex flex-wrap gap-4 justify-center">
               {socialLinks.map((link) => (
                 <li
                   key={link.name}
@@ -49,7 +53,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="w-1/2  flex justify-center items-center ">
+      <div className="relative z-10 w-1/2  flex justify-center items-center ">
         <Image
           src="/Brayhan-Ninahuaman.webp"
           alt="braynin"

@@ -14,6 +14,9 @@ export default {
         typeWriter: {
           to: { width: "16ch" },
         },
+        typeWriterCelular: {
+          to: { width: "9ch" },
+        },
         blink: {
           "0%": {
             "border-right-color": "transparent",
@@ -29,6 +32,8 @@ export default {
       animation: {
         typeWriterBlink:
           "typeWriter 2s steps(30, end) 1s 1 normal both, blink 1s step-start infinite",
+        typeWriterBlinkCelular:
+          "typeWriterCelular 2s steps(30, end) 1s 1 normal both, blink 1s step-start infinite",
       },
       colors: {
         gris: "#c2c6ce",
@@ -36,6 +41,7 @@ export default {
         celeste: "#668dc0",
         acero: "#304a6e",
         azul: "#0f1c30",
+        azulOscuro: "#010b13",
       },
     },
   },
