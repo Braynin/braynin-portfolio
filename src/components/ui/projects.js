@@ -32,9 +32,12 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="w-full h-auto flex flex-col items-center justify-center py-10 my-10"
+      className="relative w-full h-auto flex flex-col items-center justify-center py-10 my-10"
     >
-      <div className="bg-azul bg-opacity-20 mb-20 py-5 px-10  rounded-full  flex justify-centeritems-center">
+      <div className="absolute inset-0 bg-[url('/background-hero.webp')] bg-cover"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-transparent to-azulOscuro"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-azulOscuro"></div>
+      <div className="relative z-10bg-acero bg-opacity-20 mb-20 py-5 px-10  rounded-full  flex justify-centeritems-center">
         <h2 className={`${silkscreen.className} text-celeste text-4xl`}>
           Lo que hice hasta ahora
         </h2>
@@ -45,7 +48,7 @@ export default function Projects() {
           <Link href={project.url} key={project.titulo} target="_blank">
             <SpotlightCard
               key={project.titulo}
-              className="flex flex-col items-center justify-between w-96 h-auto hover:-inset-y-2 transition-transform ease-in-out"
+              className="flex flex-col items-center justify-between w-96 celular:w-80 h-auto hover:-inset-y-2 transition-transform ease-in-out"
               spotlightColor="rgba(102, 141, 192, 0.25)"
             >
               <Image
