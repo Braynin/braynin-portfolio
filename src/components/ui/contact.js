@@ -104,7 +104,7 @@ export default function Contact() {
             <div className="flex justify-center pb-5">
               <h3 className="text-3xl celular:text-2xl font-bold">Mi Correo</h3>
             </div>
-            <div className="flex gap-5 items-center">
+            <div className="flex gap-5 items-center justify-between">
               <span className="text-xl celular:text-base font-bold">
                 {correo}
               </span>
@@ -124,7 +124,7 @@ export default function Contact() {
                 Mi LinkedIn
               </h3>
             </div>
-            <div className="flex gap-5 items-center">
+            <div className="flex gap-5 items-center justify-between">
               <span className="text-xl celular:text-base font-bold">
                 Brayhan Ninahuaman
               </span>
