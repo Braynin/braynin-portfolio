@@ -72,7 +72,9 @@ export default function Contact() {
               </h3>
             </div>
             <div className="flex gap-5 items-center">
-              <span className="text-xl font-bold">{phoneNumber}</span>
+              <span className="text-xl celular:text-base font-bold">
+                {phoneNumber}
+              </span>
               {isMobile && (
                 <a
                   href={`tel:${telNumber}`}
@@ -103,7 +105,9 @@ export default function Contact() {
               <h3 className="text-3xl celular:text-2xl font-bold">Mi Correo</h3>
             </div>
             <div className="flex gap-5 items-center">
-              <span className="text-xl font-bold">{correo}</span>
+              <span className="text-xl celular:text-base font-bold">
+                {correo}
+              </span>
 
               <button
                 onClick={() => handleCopy(correo)}
@@ -121,7 +125,9 @@ export default function Contact() {
               </h3>
             </div>
             <div className="flex gap-5 items-center">
-              <span className="text-xl font-bold">Brayhan Ninahuaman</span>
+              <span className="text-xl celular:text-base font-bold">
+                Brayhan Ninahuaman
+              </span>
 
               <a
                 href={linkedIn}
