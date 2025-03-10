@@ -72,7 +72,7 @@ export default function Contact() {
               </h3>
             </div>
             <div className="flex gap-5 items-center">
-              <span className="text-xl celular:text-base font-bold">
+              <span className="text-xl celular:text-base font-bold celular:block">
                 {phoneNumber}
               </span>
               {isMobile && (
