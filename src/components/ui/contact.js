@@ -71,8 +71,8 @@ export default function Contact() {
                 Mi Celular
               </h3>
             </div>
-            <div className="flex gap-5 items-center">
-              <span className="text-xl celular:text-base font-bold celular:block">
+            <div className="flex gap-5 items-center justify-between">
+              <span className="text-xl celular:text-base font-bold">
                 {phoneNumber}
               </span>
               {isMobile && (
