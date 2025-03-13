@@ -11,6 +11,8 @@ import {
   IconCoins,
   IconBrandNodejs,
   IconBrandMongodb,
+  IconBrandVue,
+  IconBrandNuxt,
 } from "@tabler/icons-react";
 
 const technologiesOptions = [
@@ -33,17 +35,6 @@ const technologiesOptions = [
           <IconBrandJavascript className="w-20 h-20 celular:w-16 celular:h-16" />
         ),
       },
-    ],
-  },
-  {
-    title: "Aprendiendo",
-    tecnologias: [
-      {
-        name: "TypeScript",
-        icon: (
-          <IconBrandTypescript className="w-20 h-20 celular:w-16 celular:h-16" />
-        ),
-      },
       {
         name: "Tailwind CSS",
         icon: (
@@ -57,12 +48,6 @@ const technologiesOptions = [
         ),
       },
       {
-        name: "Astro",
-        icon: (
-          <IconBrandAstro className="w-20 h-20 celular:w-16 celular:h-16" />
-        ),
-      },
-      {
         name: "Next.js",
         icon: (
           <IconBrandNextjs className="w-20 h-20 celular:w-16 celular:h-16" />
@@ -71,7 +56,34 @@ const technologiesOptions = [
     ],
   },
   {
-    title: "Visto y en la mira",
+    title: "Aprendiendo",
+    tecnologias: [
+      {
+        name: "TypeScript",
+        icon: (
+          <IconBrandTypescript className="w-20 h-20 celular:w-16 celular:h-16" />
+        ),
+      },
+
+      {
+        name: "Astro",
+        icon: (
+          <IconBrandAstro className="w-20 h-20 celular:w-16 celular:h-16" />
+        ),
+      },
+
+      {
+        name: "Vue",
+        icon: <IconBrandVue className="w-20 h-20 celular:w-16 celular:h-16" />,
+      },
+      {
+        name: "Nuxt",
+        icon: <IconBrandNuxt className="w-20 h-20 celular:w-16 celular:h-16" />,
+      },
+    ],
+  },
+  {
+    title: "Visto",
     tecnologias: [
       {
         name: "MySQL",

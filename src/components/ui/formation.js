@@ -88,8 +88,7 @@ export default function Formation() {
                 }
                 gridSize={5}
                 pixelColor="#0f1c30"
-                animationStepDuration={0.4}
-                // Eliminamos aspectRatio y damos altura en PixelTransition
+                animationStepDuration={0.2}
                 triggerAnimation={triggerAnimation}
               />
             </div>

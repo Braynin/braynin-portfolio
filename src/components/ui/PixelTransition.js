@@ -7,11 +7,10 @@ function PixelTransition({
   secondContent,
   gridSize = 7,
   pixelColor = "currentColor",
-  animationStepDuration = 0.3, // duración base en segundos para el stagger
+  animationStepDuration = 0.3,
   className = "",
   style = {},
-  // Eliminamos aspectRatio para usar una altura fija en este ejemplo
-  triggerAnimation, // valor que se actualiza para disparar la animación
+  triggerAnimation,
 }) {
   const containerRef = useRef(null);
   const pixelGridRef = useRef(null);
@@ -22,13 +21,11 @@ function PixelTransition({
     const pixelGridEl = pixelGridRef.current;
     if (!pixelGridEl) return;
     pixelGridEl.innerHTML = "";
-    // Aseguramos que el grid sea visible
     pixelGridEl.style.visibility = "visible";
     for (let row = 0; row < gridSize; row++) {
       for (let col = 0; col < gridSize; col++) {
         const pixel = document.createElement("div");
         pixel.classList.add("pixel");
-        // Estilos base para cada píxel
         pixel.style.position = "absolute";
         pixel.style.display = "none";
         pixel.style.backgroundColor = pixelColor;
@@ -49,7 +46,6 @@ function PixelTransition({
   // Cada vez que triggerAnimation cambie, se dispara la animación
   useEffect(() => {
     animatePixels();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [triggerAnimation]);
 
   const animatePixels = () => {
@@ -72,12 +68,10 @@ function PixelTransition({
       }, index * staggerDuration);
     });
 
-    // Después de animationStepDuration (más un pequeño extra), se inicia el fade-in del contenido activo
     setTimeout(() => {
       // Configuramos la transición del contenido activo
       activeEl.style.display = "block";
       activeEl.style.opacity = "0";
-      activeEl.style.transition = "opacity 0.5s ease";
       activeEl.style.pointerEvents = "none";
 
       // Oculta el contenido previo para evitar que se vea detrás
@@ -89,10 +83,9 @@ function PixelTransition({
       // Disparar el fade-in (cambio de opacidad a 1)
       setTimeout(() => {
         activeEl.style.opacity = "1";
-      }, 50);
-    }, animationStepDuration * 1000 + 100); // 100ms extra para suavizar
+      }, 10);
+    }, animationStepDuration * 1000);
 
-    // Luego, oculta cada píxel escalonadamente (aunque el grid se hará invisible en general)
     shuffled.forEach((pixel, index) => {
       setTimeout(() => {
         pixel.style.display = "none";
@@ -106,12 +99,9 @@ function PixelTransition({
       className={`${className} relative overflow-hidden w-full rounded-2xl h-[400px] celular:h-[250px] bg-gray-900`}
       style={style}
     >
-      {/* Contenedor para mantener la altura (fija en este ejemplo: 300px) */}
-      {/* Contenido de fondo: certificado anterior */}
       <div className="absolute inset-0 w-full h-full first-content flex justify-center items-center">
         {firstContent}
       </div>
-      {/* Contenido activo: certificado actual, inicialmente oculto */}
       <div
         ref={activeRef}
         className="absolute inset-0 w-full h-full z-[4] flex justify-center items-center"
@@ -119,7 +109,6 @@ function PixelTransition({
       >
         {secondContent}
       </div>
-      {/* Grid de píxeles (capa superior) */}
       <div
         ref={pixelGridRef}
         className="absolute inset-0 w-full h-full pointer-events-none z-[10]"

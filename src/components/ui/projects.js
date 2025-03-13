@@ -37,9 +37,9 @@ export default function Projects() {
       <div className="absolute inset-0 bg-[url('/background-hero.webp')] bg-cover"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-transparent to-azulOscuro"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-azulOscuro"></div>
-      <div className="relative z-10bg-acero bg-opacity-20 mb-20 py-5 px-10  rounded-full  flex justify-centeritems-center">
+      <div className="relative z-10 bg-acero bg-opacity-20 mb-20 py-5 px-10  rounded-full  flex justify-centeritems-center">
         <h2 className={`${silkscreen.className} text-celeste text-4xl`}>
-          Lo que hice hasta ahora
+          Proyectos
         </h2>
       </div>
 
