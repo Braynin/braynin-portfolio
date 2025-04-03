@@ -71,15 +71,6 @@ const technologiesOptions = [
           <IconBrandAstro className="w-20 h-20 celular:w-16 celular:h-16" />
         ),
       },
-
-      {
-        name: "Vue",
-        icon: <IconBrandVue className="w-20 h-20 celular:w-16 celular:h-16" />,
-      },
-      {
-        name: "Nuxt",
-        icon: <IconBrandNuxt className="w-20 h-20 celular:w-16 celular:h-16" />,
-      },
     ],
   },
   {
@@ -106,6 +97,14 @@ const technologiesOptions = [
         icon: (
           <IconBrandMongodb className="w-20 h-20 celular:w-16 celular:h-16" />
         ),
+      },
+      {
+        name: "Vue",
+        icon: <IconBrandVue className="w-20 h-20 celular:w-16 celular:h-16" />,
+      },
+      {
+        name: "Nuxt",
+        icon: <IconBrandNuxt className="w-20 h-20 celular:w-16 celular:h-16" />,
       },
       {
         name: "Express",
